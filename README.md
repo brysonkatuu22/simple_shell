@@ -1,11 +1,5 @@
 .SH NAME
-.B simple_shell \- simple UNIX command interpreter made in C
-
-
-
-BY BRYSON KATUU AND FAVOUR NKANDA
-
-
+.B simple_shell \- simple UNIX command interpreter made in C 
 
 .SH SYNOPSIS
 $ /hsh [options] [file]
@@ -22,7 +16,7 @@ Always returns the status of the previously executed command ( 0 if no command w
 
 looks in PATH env variable for executable program file location.
 
-.SH
+.SH 
 
 .B Invocation
 .in +2n
@@ -43,16 +37,8 @@ Command options will be typed after the main command followed by a space and a
 $ ls -l
 
 
-
-
 .SH BUGS
 not many found.
 
-
-
-
-
-
 .SH AUTHOR
-BRYSON KATUU
-FAVOUR NKANDA
+BRYSON KATUU, FAVOUR NKANDA

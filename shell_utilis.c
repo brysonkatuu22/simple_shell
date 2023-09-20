@@ -2,7 +2,7 @@
 
 /**
  * Auth: BRYSON KATUU
- *       FAVOUR NKANDA
+ * 		 FAVOUR NKANDA
  *
  * Description:
  * the extended functions for main.c

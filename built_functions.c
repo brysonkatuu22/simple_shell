@@ -1,18 +1,36 @@
 #include "shell.h"
 
 /**
- *my_ exit - exits shell
+ *env - prints the current_environnement
+ *@tokenized_command: command entered
+ *
+ *Return: void
+ */
+
+void env(char **tokenized_command __attribute__((unused)))
+{
+	int i;
+
+	for (i = 0; environ[i] != NULL; i++)
+	{
+		print(environ[i], STDOUT_FILENO);
+		print("\n", STDOUT_FILENO);
+	}
+}
+
+/**
+ * quit - exits the shell
  * @tokenized_command: command entered
  *
  * Return: void
  */
-void my_exit(char **tokenized_command)
+
+void quit(char **tokenized_command)
 {
 	int num_token = 0, arg;
 
 	for (; tokenized_command[num_token] != NULL; num_token++)
 		;
-
 	if (num_token == 1)
 	{
 		free(tokenized_command);
@@ -41,21 +59,4 @@ void my_exit(char **tokenized_command)
 	}
 	else
 		print("$: exit doesn't take more than one argument\n", STDERR_FILENO);
-}
-
-/**
- * env - prints current environment
- * @tokenized_command: entered command
- *
- * Return: void
- */
-void env(char **tokenized_command __attribute__((unused)))
-{
-	int i;
-
-	for (i = 0; environ[i] != NULL; i++)
-	{
-		print(environ[i], STDOUT_FILENO);
-		print("\n", STDOUT_FILENO);
-	}
 }
