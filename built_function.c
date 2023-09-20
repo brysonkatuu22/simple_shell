@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * exit - exits shell
+ *my_ exit - exits shell
  * @tokenized_command: command entered
  *
  * Return: void
  */
-void exit(char **tokenized_command)
+void my_exit(char **tokenized_command)
 {
 	int num_token = 0, arg;
 

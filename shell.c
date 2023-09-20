@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * main - shell program entry point
+ * entry - shell program entry point
  *
  * Description: Initializes necessary variables and handles user input
  *
  * Return: 0 on success, non-zero on error
  */
-int main(void)
+int entry(void)
 {
 	char **commands = NULL;
 	char *line = NULL;

@@ -1,5 +1,5 @@
 .SH NAME
-.B simple_shell \- simple UNIX command interpreter made in C 
+.B simple_shell \- simple UNIX command interpreter made in C
 
 
 
@@ -22,7 +22,7 @@ Always returns the status of the previously executed command ( 0 if no command w
 
 looks in PATH env variable for executable program file location.
 
-.SH 
+.SH
 
 .B Invocation
 .in +2n
