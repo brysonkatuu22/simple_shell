@@ -85,7 +85,7 @@ void _strcpy(char *source, char *dest)
 }
 
 /**
- *_strlen - counts string length
+ *_strlen - counts the  string length
  *@string: string to be counted
  *
  * Return: length of the string
